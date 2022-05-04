@@ -1,3 +1,7 @@
+# 0.15.0:
+- Forked.
+- Improve: Added Prefix option to prepend to header links, when a Markdown renderer changes header ids (ie Bitbucket)
+
 # 0.14.1:
 - Fix: Logic fix bracket position. #27 by @darkdragon-001.
 
