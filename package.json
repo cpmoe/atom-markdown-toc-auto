@@ -1,27 +1,15 @@
 {
-  "_from": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball",
-  "_id": "markdown-toc-auto@0.14.1",
-  "_inBundle": false,
-  "_integrity": "sha512-NFF26l8fQQu4VXF2FEd+O+kpqcCmkG8JJIYbFtbLC7V0WZ3GC7SiTMyah06dLFsLzrwEW7/CRsnCnVge9R110A==",
-  "_location": "/markdown-toc-auto",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "remote",
-    "raw": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball"
+  "name": "markdown-toc-auto",
+  "main": "./lib/main",
+  "version": "0.15.0",
+  "description": "Insert and auto-update table of contents on save",
+  "repository": "https://github.com/cpmoe/atom-markdown-toc-auto",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball",
-  "_shasum": "6258b3e55eb40de3a0117a290c534dfdbaef9d0c",
-  "_spec": "https://www.atom.io/api/packages/markdown-toc-auto/versions/0.14.1/tarball",
-  "_where": "C:\\Users\\avid\\AppData\\Local\\Temp\\apm-install-dir-202244-16716-13bt1ej.9dl9h",
   "bugs": {
-    "url": "https://github.com/t9md/atom-markdown-toc-auto/issues"
+    "url": "https://github.com/cpmoe/atom-markdown-toc-auto/issues"
   },
   "bundleDependencies": false,
   "configSchema": {
@@ -60,7 +48,7 @@
       "prefix": {
         "type": "string",
         "default": "",
-        "description": "Prefix for TOC",
+        "description": "Prefix for header links",
         "order": 5
       }
   },
