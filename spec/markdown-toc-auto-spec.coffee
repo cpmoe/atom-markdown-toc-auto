@@ -23,9 +23,10 @@ describe "markdown-toc-auto", ->
       expect(deserializeTocOptions('max:3')).toEqual({max: 3})
       expect(deserializeTocOptions('link:true')).toEqual({link: true})
       expect(deserializeTocOptions('update:false')).toEqual({update: false})
+      expect(deserializeTocOptions('prefix:markdown-header')).toEqual({update: 'markdown-header'})
 
-      deserialized = deserializeTocOptions('min:1 max:1 link:true update:true')
-      expect(deserialized).toEqual({min: 1, max: 1, link: true, update: true})
+      deserialized = deserializeTocOptions('min:1 max:1 link:true update:true prefix:markdown-header')
+      expect(deserialized).toEqual({min: 1, max: 1, link: true, update: true, prefix: 'markdown-header'})
 
     it "deserialize ignore invalid value", ->
       expect(deserializeTocOptions('link:99')).toEqual({})
@@ -35,6 +36,7 @@ describe "markdown-toc-auto", ->
       expect(deserializeTocOptions('max:-1')).toEqual({})
       expect(deserializeTocOptions('abc:def')).toEqual({})
       expect(deserializeTocOptions('abc')).toEqual({})
+      expect(deserializeTocOptions('prefix:2')).toEqual({})
       expect(deserializeTocOptions('')).toEqual({})
 
   describe "linkFor function", ->
